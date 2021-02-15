@@ -1,9 +1,9 @@
 <div class="container mt-4 ">
 <div class="row">
     <h3>Listado de estudiantes</h3>
-</div>
+    
 <br>
-<table class="table">
+<table class="table" *ngIf="listaEstudiantes.length > 0" >
 <thead>
 <th>Nro</th>
 <th>Nombre</th>
@@ -18,4 +18,5 @@
 </tbody>
 
 </table>
+<h3 *ngIf="listaEstudiantes.length === 0">No Hay Registros para mostrar</h3>
 </div>
