@@ -7,7 +7,28 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
  
- texto= '';
+ listaEstudiantes: any[] = [
+   {
+     nombre: "Tomas Gonzales", 
+     estado: "Promocionado"
+   },
+
+   {
+    nombre: "Lucas Perez", 
+    estado: "Regular"
+  } ,
+
+  {
+    nombre: "Juan Garcia",
+     estado: "Regular"
+  } ,
+
+  {
+    nombre: "Marta Lopez",
+     estado: "Promocionado"
+  } 
+
+]
 
  
 

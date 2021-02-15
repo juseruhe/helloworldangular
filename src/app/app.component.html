@@ -1,5 +1,21 @@
-<div class="container mt-4">
-<input type="text" class="form control" placeholder="Escriba algo aqui" [(ngModel)]="texto">
+<div class="container mt-4 ">
+<div class="row">
+    <h3>Listado de estudiantes</h3>
+</div>
 <br>
-{{texto}}
+<table class="table">
+<thead>
+<th>Nro</th>
+<th>Nombre</th>
+<th>Estado</th>
+</thead>
+<tbody>
+<tr *ngFor="let estudiante of listaEstudiantes; let i= index">
+    <td>{{i + 1}}</td>
+    <td>{{estudiante.nombre}}</td>
+    <td>{{estudiante.estado}}</td>
+</tr>
+</tbody>
+
+</table>
 </div>
