@@ -28,6 +28,19 @@ export class AppComponent {
      estado: "Promocionado"
   } 
 
+  ,
+
+  {
+    nombre: "Nicolas Gomez",
+     estado: "Libre"
+  } 
+  ,
+
+  {
+    nombre: "Patricia Funes",
+     estado: "Libre"
+  } 
+
   
 
 
